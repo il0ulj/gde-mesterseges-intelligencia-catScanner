@@ -8,6 +8,11 @@ namespace catScanner
 {
     public partial class Form1 : Form
     {
+
+        private readonly YoloScorer<catModel> scorer;
+
+        private objectLabeler labeler;
+
         public Form1()
         {
             InitializeComponent();
