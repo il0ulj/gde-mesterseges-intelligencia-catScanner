@@ -1,3 +1,9 @@
+using Yolov5Net.Scorer;
+using Yolov5Net.Scorer.Models;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using Image = SixLabors.ImageSharp.Image;
+
 namespace catScanner
 {
     public partial class Form1 : Form
