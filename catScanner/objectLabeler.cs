@@ -16,7 +16,7 @@ namespace catScanner
 
         public objectLabeler()
         {
-            font = new Font(new FontCollection().Add("C:/Windows/Fonts/consola.ttf"), 100);
+            font = new Font(new FontCollection().Add("C:/Windows/Fonts/consola.ttf"), 30);
         }
 
         public void label(Image img, List<YoloPrediction> predictions)
@@ -29,7 +29,7 @@ namespace catScanner
                 float y = prediction.Rectangle.Top - -20;
 
                 img.Mutate(a => a.DrawPolygon(
-                    new SolidPen(prediction.Label.Color, 10),
+                    new SolidPen(prediction.Label.Color, 6),
                     new PointF(prediction.Rectangle.Left, prediction.Rectangle.Top),
                     new PointF(prediction.Rectangle.Right, prediction.Rectangle.Top),
                     new PointF(prediction.Rectangle.Right, prediction.Rectangle.Bottom),
